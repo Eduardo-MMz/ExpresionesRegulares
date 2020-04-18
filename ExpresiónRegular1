@@ -19,5 +19,10 @@ grandes, pero en la realidad hay un tamaño máximo que puede tomar un número h
 
 8) cadenasNobbb -> (a+(b|bb)?a+)+
 
-9) cadena29 -> ([0-8])*(2)+([0-8])*([0-13-9])*(9)+([0-13-9])*
+9) cadena29 -> ([0-8])*(2)+([0-8])*([0-1 3-9])*(9)+([0-1 3-9])*   Coloco espacio entre 1 y 3 para que no se confunda con 13
 
+13) SINaba -> (a*(b(b)+)?a*)+
+
+14) SINbaba -> ((a)*b(b)+(a)*b(b)+ | a(a)+(b)*a(a)+(b)*)+
+
+15) SINbba -> 

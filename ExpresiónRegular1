@@ -1,0 +1,23 @@
+En todas las expresiones regulares de la tarea coloqué este mismo enlace (todas las expresiones regulares están aqui).
+
+1) cadMin -> a([a-z])*a | a
+
+2) cadena_aa -> (a([a-zA-Z])* | ([a-zA-Z])*a)+
+
+3) cadena0 -> ([1-9])+([0-9])* | 0
+
+4) numOctales -> 0(([1-9])+([0-9])* | 0)    Esta expresión regular contempla números octales grandes, pero en la realidad hay un tamaño
+máximo que puede tomar un número octal en lenguaje C (32 bits,11 dígitos octales, máximo número: 37,777,777,777)
+
+5) numHex -> 0[xX](([1-9a-fA-F])+([0-9a-fA-F])* | 0)    Como en el caso anterior, esta expresión regular contempla números hexadecimales
+grandes, pero en la realidad hay un tamaño máximo que puede tomar un número hexadecimal en lenguaje C
+(32 bits,8 dígitos hexadecimales, máximo número: FFFFFFFF)
+
+6) numPares -> (([1-9])+([0-9])*)*[0 2 4 6 8]  ó  (([1-9])+([0-9])*)*(0|2|4|6|8)
+
+7) numImpares -> (([1-9])+([0-9])*)*[1 3 5 7 9]  ó  (([1-9])+([0-9])*)*(1|3|5|7|9)
+
+8) cadenasNobbb -> (a+(b|bb)?a+)+
+
+9) cadena29 -> ([0-8])*(2)+([0-8])*([0-13-9])*(9)+([0-13-9])*
+
